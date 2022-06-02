@@ -30,42 +30,42 @@ public class CardTrickICE1 {
             System.out.println(card);
         }
         //step 2:take input 
-        System.out.print("Please chose the suit: \n1: Hearts\n2: Diamonds"
+        System.out.print("Please choose the suit: \n1: Hearts\n2: Diamonds"
             + "\n3: Spades\n4: Clubs\nSuit:");
         Scanner input=new Scanner(System.in);
-        String inp=input.next();
+        String in=input.next();
         
-        System.out.println("Please choose the value(1 to 13):");
-        int userInp = input.nextInt();
+        System.out.println("Please choose the a number between 1-13: ");
+        int userInput = input.nextInt();
         
-        String switchedSuit;
-        switch(inp)
+        String switchSuit;
+        switch(in)
         {
             case "1":
-                switchedSuit = Card.SUITS[0];
+                switchSuit = Card.SUITS[0];
                 break;
             case "2":
-                switchedSuit = Card.SUITS[1];
+                switchSuit = Card.SUITS[1];
                 break;
             case "3":
-                switchedSuit = Card.SUITS[2];
+                switchSuit = Card.SUITS[2];
                 break;
             case "4":
-                switchedSuit = Card.SUITS[3];
+                switchSuit = Card.SUITS[3];
                 break;
             default:
-                switchedSuit = "";
+                switchSuit = "";
         }
         
-        String finalValue = userInp + " of " + switchedSuit;
+        String finalValue = userInput + " of " + switchSuit;
       
         //step 3: match with array 
-        String output = "Card not found.";
+        String output = "Card is not found";
         for(int i=0;i<magicHand.length;i++)
         {
             if(magicHand[i].toString().equals(finalValue))
                 {
-                    output = "Card is found.";
+                    output = "Card is found";
                     break;
                 }
         }
