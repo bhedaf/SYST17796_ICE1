@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Name: Freya Bheda
+Student ID: 991643368 
  */
 package cardtrickice1;
 import java.util.*;
