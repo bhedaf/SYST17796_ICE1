@@ -20,7 +20,6 @@ public class CardTrickICE1 {
     {
         
         Card[] magicHand = new Card[7]; //Array of object
-        Card luckyCard = new Card(4,"diamonds"); //Added object from github
         for( int i=0;i<magicHand.length;i++)
         {
             Card c1 = new Card((int)((Math.random()*13) + 1),Card.SUITS[(int)(Math.random()*4)]);
