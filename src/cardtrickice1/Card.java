@@ -15,7 +15,7 @@ public class Card
     private int value;
     private String suits; //encapsulation
     //constant
-    public static final String [] SUITS = { "diamonds","clubs","spades","hearts"};
+    public static final String [] SUITS = { "hearts","diamonds","spades","clubs"};
 
     /**
      * @return the value
@@ -47,5 +47,14 @@ public class Card
    //number
     
     //method for suits
-    
+    public Card(int value, String suits)
+    {
+        this.value=value;
+        this.suits=suits;
+    }
+    @Override
+    public String toString()
+    {
+        return value +" of "+ suits;
+    }
 }
